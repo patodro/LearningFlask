@@ -35,11 +35,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloFlask\static\site.css" />
     <Content Include="HelloFlask\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HelloFlask\" />
+    <Folder Include="HelloFlask\static\" />
     <Folder Include="HelloFlask\templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
