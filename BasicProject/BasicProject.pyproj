@@ -35,7 +35,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HelloFlask\static\data.json" />
     <Content Include="HelloFlask\static\site.css" />
+    <Content Include="HelloFlask\templates\about.html" />
     <Content Include="HelloFlask\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
