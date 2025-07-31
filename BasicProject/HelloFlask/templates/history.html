@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/site.css" />
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <h1>{{ heading }}</h1>
+    <table>
+        <tr>
+            <th>Inaugural Season</th>
+            <th>Seasons</th>
+            <th>Owner</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Win Pct</th>
+            <th>Best Reg Season Finish</th>
+        </tr>
+        {% for team in teams %}
+        <tr>
+            <td>{{team.startYear}}</td>
+            <td>{{team.numSeasons}}</td>
+            <td>{{team.owner}}</td>
+            <td>{{team.wins}}</td>
+            <td>{{team.losses}}</td>
+            <td>{{team.winPct}}</td>
+            <td>{{team.bestReg}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {{ content }}
+    {% endblock %}
+</body>
+</html>

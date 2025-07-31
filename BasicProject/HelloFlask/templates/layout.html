@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <title>{{ title }}</title>
     <link rel="stylesheet" type="text/css" href="/static/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="navbar">
         <a href="/" class="navbar-brand">Team Friends Fantasy Football</a>
         <a href="{{ url_for('home') }}" class="navbar-item">Home</a>
-        <a href="{{ url_for('about') }}" class="navbar-item">About</a>
-        <a href="{{ url_for('get_data') }}" class="navbar-item">API</a>
+        <a href="{{ url_for('history') }}" class="navbar-item">History</a>
+        <a href="{{ url_for('home2025') }}" class="navbar-item">2025</a>
+        <a href="{{ url_for('get_rules') }}" class="navbar-item">Rulebook</a>
     </div>
 
     <div class="body-content">

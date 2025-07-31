@@ -1,0 +1,88 @@
+{
+  "teams": [
+    {
+      "owner": "Z",
+      "startYear": 2011,
+      "wins": 107,
+      "losses": 82,
+      "bestReg": "1('11,'13,'14)"
+    },
+    {
+      "owner": "Sean",
+      "startYear": 2011,
+      "wins": 106,
+      "losses": 83,
+      "bestReg": "1('12,'20,'22)"
+    },
+    {
+      "owner": "Dave",
+      "startYear": 2011,
+      "wins": 97,
+      "losses": 92,
+      "bestReg": "2('15,'19)"
+    },
+    {
+      "owner": "Pat",
+      "startYear": 2011,
+      "wins": 96,
+      "losses": 93,
+      "bestReg": "1('19,'21)"
+    },
+    {
+      "owner": "Bobby",
+      "startYear": 2012,
+      "wins": 95,
+      "losses": 80,
+      "bestReg": "1('17)"
+    },
+    {
+      "owner": "Boyce",
+      "startYear": 2012,
+      "wins": 74,
+      "losses": 102,
+      "bestReg": "1('15,'16)"
+    },
+    {
+      "owner": "Tony",
+      "startYear": 2012,
+      "wins": 73,
+      "losses": 102,
+      "bestReg": "4('21,'22)"
+    },
+    {
+      "owner": "Katie",
+      "startYear": 2013,
+      "wins": 78,
+      "losses": 83,
+      "bestReg": "1('14)"
+    },
+    {
+      "owner": "Lepo",
+      "startYear": 2014,
+      "wins": 73,
+      "losses": 74,
+      "bestReg": "1('18)"
+    },
+    {
+      "owner": "Josh",
+      "startYear": 2014,
+      "wins": 71,
+      "losses": 76,
+      "bestReg": "2('16,'23)"
+    },
+    {
+      "owner": "Andy",
+      "startYear": 2017,
+      "wins": 58,
+      "losses": 80,
+      "bestReg": "1('23)"
+    },
+    {
+      "owner": "Mike",
+      "startYear": 2023,
+      "wins": 16,
+      "losses": 12,
+      "bestReg": "4('23,'24)"
+    }
+  ]
+}

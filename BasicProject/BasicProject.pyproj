@@ -35,11 +35,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HelloFlask\static\data.json" />
+    <Content Include="HelloFlask\static\regSeasonHistory.json" />
     <Content Include="HelloFlask\static\site.css" />
     <Content Include="HelloFlask\static\style.css" />
+    <Content Include="HelloFlask\static\TeamFriendsRules.pdf" />
     <Content Include="HelloFlask\templates\2025home.html" />
-    <Content Include="HelloFlask\templates\about.html" />
+    <Content Include="HelloFlask\templates\history.html" />
     <Content Include="HelloFlask\templates\index.html" />
     <Content Include="HelloFlask\templates\layout.html" />
     <Content Include="HelloFlask\nav.html" />
