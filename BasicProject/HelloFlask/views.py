@@ -15,7 +15,7 @@ def home():
 
     return render_template(
         "index.html",
-        title = "Flask Tester",
+        title = "Team Friends Fantasy Football",
         message = "Hello, Flask!",
         content = " on " + formatted_now)
 
