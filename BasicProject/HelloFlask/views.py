@@ -3,14 +3,19 @@ from flask import render_template
 from HelloFlask import app
 
 @app.route('/')
-@app.route('/home')
+def home2025():
+    return render_template(
+        "2025home.html",
+        title = "Team Friends 2025")
+
+@app.route('/index')
 def home():
     now = datetime.now()
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 
     return render_template(
         "index.html",
-        title = "Hello Flask",
+        title = "Flask Tester",
         message = "Hello, Flask!",
         content = " on " + formatted_now)
 
