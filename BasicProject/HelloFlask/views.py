@@ -10,7 +10,7 @@ def home():
 
     return render_template(
         "index.html",
-        title = "Hello Flask",
+        title = "Team Friends Fantasy Football",
         message = "Hello, Flask!",
         content = " on " + formatted_now)
 

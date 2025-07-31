@@ -1,19 +1,28 @@
+body {
+    background-color: #333333;
+    color: white;
+}
 .message {
     font-weight: 600;
-    color: blue;
+    color: skyblue;
 }
 .navbar {
-    background-color: lightslategray;
+    background-color: #cca300;
     font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     padding: 8px 5px 8px 5px;
 }
 
-    .navbar a {
-        text-decoration: none;
-        color: inherit;
-    }
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: green;
+}
 
 .navbar-brand {
     font-size: 1.2em;
