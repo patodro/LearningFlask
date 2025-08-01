@@ -1,13 +1,14 @@
 <html>
 <head>
-    <title>{{ title }}</title>
+    <title>TFFF League History</title>
     <link rel="stylesheet" type="text/css" href="/static/site.css" />
 </head>
 <body>
     {% extends "layout.html" %}
     {% block content %}
-    <h1>{{ heading }}</h1>
-    <table>
+    <h1>Team Friends Fantasy Football League History</h1>
+    <h2>Regular Season Records</h2>
+    <table class="regSeason">
         <tr>
             <th>Inaugural Season</th>
             <th>Seasons</th>
@@ -16,6 +17,7 @@
             <th>Losses</th>
             <th>Win Pct</th>
             <th>Best Reg Season Finish</th>
+            <th></th>
         </tr>
         {% for team in teams %}
         <tr>
@@ -26,6 +28,7 @@
             <td>{{team.losses}}</td>
             <td>{{team.winPct}}</td>
             <td>{{team.bestReg}}</td>
+            <td><img src={{team.pngWins}}/></td>
         </tr>
         {% endfor %}
     </table>

@@ -29,11 +29,16 @@ def get_rules():
 
 @app.route('/history')
 def history():
+    ##########################
+    # Regular Season History #
+    ##########################
     #get Regular Season History from file
     regSeason = 'regSeasonHistory.json'
     currDir = pathlib.Path(__file__).parent.resolve()
-    with open(os.path.join(currDir,"static",regSeason), 'r') as f:
+    with open(os.path.join(currDir,"data",regSeason), 'r') as f:
         dictRegSeason = json.load(f)
+        
+    
     
     for team in dictRegSeason['teams']:
         #calculate win pct
@@ -43,9 +48,9 @@ def history():
         #caluclate number of seasons
         currYr = 2025
         team['numSeasons'] = currYr - team['startYear']
+        
+        team['pngWins'] = f"/static/{team['owner']}_wins.png"
 
     return render_template(
         "history.html",
-        title = "TFFF League History",
-        heading = "Team Friends Fantasy Football League History",
         teams = dictRegSeason['teams'])
