@@ -50,3 +50,10 @@ h1 {
 .regSeason tr {
     text-align: center;
 }
+
+.playoffs th {
+    padding-right: 10px;
+}
+.playoffs tr {
+    text-align: center;
+}

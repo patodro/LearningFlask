@@ -37,8 +37,6 @@ def history():
     currDir = pathlib.Path(__file__).parent.resolve()
     with open(os.path.join(currDir,"data",regSeason), 'r') as f:
         dictRegSeason = json.load(f)
-        
-    
     
     for team in dictRegSeason['teams']:
         #calculate win pct
@@ -50,7 +48,15 @@ def history():
         team['numSeasons'] = currYr - team['startYear']
         
         team['pngWins'] = f"/static/{team['owner']}_wins.png"
-
+        
+    ###########################
+    ##### Playoff History #####
+    ###########################
+    playoffHist = 'playoffResults.json'
+    with open(os.path.join(currDir,"data",playoffHist), 'r') as f:
+        dictPlayoff = json.load(f)
+    
     return render_template(
         "history.html",
-        teams = dictRegSeason['teams'])
+        teams = dictRegSeason['teams'],
+        results = dictPlayoff['results'])

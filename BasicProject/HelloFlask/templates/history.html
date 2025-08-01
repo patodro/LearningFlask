@@ -32,6 +32,24 @@
         </tr>
         {% endfor %}
     </table>
+    
+    <h2>Playoff Results</h2>
+    <table class="playoffs">
+        <tr>
+            <th>Season</th>
+            <th>1<sup>st</sup> Place</th>
+            <th>2<sup>nd</sup> Place</th>
+            <th>3<sup>rd</sup> Place</th>
+        </tr>
+        {% for year in results %}
+        <tr>
+            <td>{{year.year}}</td>
+            <td>{{year.first}}</td>
+            <td>{{year.second}}</td>
+            <td>{{year.third}}</td>
+        </tr>
+        {% endfor %}
+    </table>
     {{ content }}
     {% endblock %}
 </body>
