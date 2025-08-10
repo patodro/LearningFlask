@@ -35,21 +35,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HelloFlask\static\regSeasonHistory.json" />
+    <Content Include="HelloFlask\data\playoffResults.json" />
+    <Content Include="HelloFlask\data\regSeasonHistory.json" />
     <Content Include="HelloFlask\static\site.css" />
     <Content Include="HelloFlask\static\style.css" />
     <Content Include="HelloFlask\static\TeamFriendsRules.pdf" />
     <Content Include="HelloFlask\templates\2025home.html" />
     <Content Include="HelloFlask\templates\history.html" />
     <Content Include="HelloFlask\templates\index.html" />
-    <Content Include="HelloFlask\templates\layout.html" />
+    <Content Include="HelloFlask\templates\nav.html" />
     <Content Include="HelloFlask\nav.html" />
+    <Content Include="HelloFlask\templates\partials\footer.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HelloFlask\" />
+    <Folder Include="HelloFlask\data\" />
     <Folder Include="HelloFlask\static\" />
     <Folder Include="HelloFlask\templates\" />
+    <Folder Include="HelloFlask\templates\partials\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
