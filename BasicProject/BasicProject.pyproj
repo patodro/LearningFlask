@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HelloFlask\data\playoffResults.json" />
+    <Content Include="HelloFlask\data\champHistory.json" />
     <Content Include="HelloFlask\data\regSeasonHistory.json" />
     <Content Include="HelloFlask\static\site.css" />
     <Content Include="HelloFlask\static\style.css" />

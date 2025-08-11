@@ -8,49 +8,81 @@
     {% extends "nav.html" %}
     {% block content %}
     <h1>Team Friends Fantasy Football League History</h1>
-    <h2>Regular Season Records</h2>
-    <table class="regSeason">
-        <tr>
-            <th>Inaugural Season</th>
-            <th>Seasons</th>
-            <th>Owner</th>
-            <th>Wins</th>
-            <th>Losses</th>
-            <th>Win Pct</th>
-            <th>Best Reg Season Finish</th>
-            <th></th>
-        </tr>
-        {% for team in teams %}
-        <tr>
-            <td>{{team.startYear}}</td>
-            <td>{{team.numSeasons}}</td>
-            <td>{{team.owner}}</td>
-            <td>{{team.wins}}</td>
-            <td>{{team.losses}}</td>
-            <td>{{team.winPct}}</td>
-            <td>{{team.bestReg}}</td>
-            <td><img src={{team.pngWins}}/></td>
-        </tr>
-        {% endfor %}
-    </table>
-    
-    <h2>Playoff Results</h2>
-    <table class="playoffs">
-        <tr>
-            <th>Season</th>
-            <th>1<sup>st</sup> Place</th>
-            <th>2<sup>nd</sup> Place</th>
-            <th>3<sup>rd</sup> Place</th>
-        </tr>
-        {% for year in results %}
-        <tr>
-            <td>{{year.year}}</td>
-            <td>{{year.first}}</td>
-            <td>{{year.second}}</td>
-            <td>{{year.third}}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div id="RegSeason" class="row">
+        <h2>Regular Season Records</h2>
+        <table class="regSeason">
+            <tr>
+                <th>Inaugural Season</th>
+                <th>Seasons</th>
+                <th>Owner</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win Pct</th>
+                <th>Best Reg Season Finish</th>
+                <th></th>
+            </tr>
+            {% for team in teams %}
+            <tr class="{{ team.status }}">
+                <td>{{team.startYear}}</td>
+                <td>{{team.numSeasons}}</td>
+                <td>{{team.owner}}</td>
+                <td>{{team.wins}}</td>
+                <td>{{team.losses}}</td>
+                <td>{{team.winPct}}</td>
+                <td>{{team.bestReg}}</td>
+                <td><img src={{team.pngWins}} /></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div id="PlayoffHistory" class="row">
+        <div id="PlayoffResults" class="half-row">
+            <div>
+                <h2>Playoff Results</h2>
+                <table class="playoffs">
+                    <tr>
+                        <th>Season</th>
+                        <th>1<sup>st</sup> Place</th>
+                        <th>2<sup>nd</sup> Place</th>
+                        <th>3<sup>rd</sup> Place</th>
+                    </tr>
+                    {% for year in results %}
+                    <tr>
+                        <td>{{year.year}}</td>
+                        <td>{{year.first}}</td>
+                        <td>{{year.second}}</td>
+                        <td>{{year.third}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <div id="ChampPoints" class="half-row">
+            <div>
+                <h2>Historical Championship Points</h2>
+                <table class="playoffs">
+                    <tr>
+                        <th>Seasons</th>
+                        <th>Owner</th>
+                        <th>1<sup>st</sup> Place</th>
+                        <th>2<sup>nd</sup> Place</th>
+                        <th>3<sup>rd</sup> Place</th>
+                        <th>Champ Score</th>
+                    </tr>
+                    {% for team in champs %}
+                    <tr class="{{ team.status }}">
+                        <td>{{team.numSeasons}}</td>
+                        <td>{{team.owner}}</td>
+                        <td>{{team.firsts}}</td>
+                        <td>{{team.seconds}}</td>
+                        <td>{{team.thirds}}</td>
+                        <td>{{team.score}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
     {{ content }}
     {% endblock %}
 </body>

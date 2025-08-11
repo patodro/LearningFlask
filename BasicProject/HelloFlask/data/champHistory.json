@@ -3,105 +3,105 @@
     {
       "owner": "Z",
       "startYear": 2011,
-      "wins": 107,
-      "losses": 82,
-      "bestReg": "1st ('11,'13,'14)",
+      "firsts": 1,
+      "seconds": 1,
+      "thirds": 2,
       "status": "active"
     },
     {
       "owner": "Sean",
       "startYear": 2011,
-      "wins": 106,
-      "losses": 83,
-      "bestReg": "1st ('12,'20,'22)",
+      "firsts": 1,
+      "seconds": 4,
+      "thirds": 2,
       "status": "active"
     },
     {
       "owner": "Dave",
       "startYear": 2011,
-      "wins": 97,
-      "losses": 92,
-      "bestReg": "2nd ('15,'19)",
+      "firsts": 2,
+      "seconds": 2,
+      "thirds": 0,
       "status": "active"
     },
     {
       "owner": "Pat",
       "startYear": 2011,
-      "wins": 96,
-      "losses": 93,
-      "bestReg": "1st ('19,'21)",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 2,
       "status": "active"
     },
     {
       "owner": "Bobby",
       "startYear": 2012,
-      "wins": 95,
-      "losses": 80,
-      "bestReg": "1st ('17)",
+      "firsts": 3,
+      "seconds": 3,
+      "thirds": 1,
       "status": "active"
     },
     {
       "owner": "Boyce",
       "startYear": 2012,
-      "wins": 74,
-      "losses": 102,
-      "bestReg": "1st ('15,'16)",
+      "firsts": 2,
+      "seconds": 0,
+      "thirds": 0,
       "status": "inactive-2025"
     },
     {
       "owner": "Tony",
       "startYear": 2012,
-      "wins": 73,
-      "losses": 102,
-      "bestReg": "4th ('21,'22)",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 1,
       "status": "active"
     },
     {
       "owner": "Katie",
       "startYear": 2013,
-      "wins": 78,
-      "losses": 83,
-      "bestReg": "1st ('14)",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 1,
       "status": "active"
     },
     {
       "owner": "Lepo",
       "startYear": 2014,
-      "wins": 73,
-      "losses": 74,
-      "bestReg": "1st ('18)",
+      "firsts": 0,
+      "seconds": 1,
+      "thirds": 1,
       "status": "active"
     },
     {
       "owner": "Josh",
       "startYear": 2014,
-      "wins": 71,
-      "losses": 76,
-      "bestReg": "2nd ('16,'23)",
+      "firsts": 1,
+      "seconds": 0,
+      "thirds": 2,
       "status": "active"
     },
     {
       "owner": "Andy",
       "startYear": 2017,
-      "wins": 58,
-      "losses": 80,
-      "bestReg": "1st ('23)",
+      "firsts": 0,
+      "seconds": 1,
+      "thirds": 0,
       "status": "active"
     },
     {
       "owner": "Mike",
       "startYear": 2023,
-      "wins": 16,
-      "losses": 12,
-      "bestReg": "4th ('23,'24)",
+      "firsts": 0,
+      "seconds": 0,
+      "thirds": 0,
       "status": "active"
     },
     {
       "owner": "Steve",
       "startYear": 2025,
-      "wins": 0,
-      "losses": 0,
-      "bestReg": "N/A",
+      "firsts": 0,
+      "seconds": 0,
+      "thirds": 0,
       "status": "active"
     }
   ]
